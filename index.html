@@ -5,240 +5,411 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>DEMO</title>
+    <title>Carla Cueto | Frontend Developer & Translator</title>
+
+    <meta
+        name="description"
+        content="Frontend developer and translator creating sleek responsive websites and multilingual experiences."
+    >
 
     <link rel="stylesheet" href="stylesheet.css">
 
-    <!-- Google Font -->
+    <!-- Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 </head>
 
 <body>
 
     <!-- =========================
-         HERO
+         Header
     ========================== -->
 
-    <section class="hero">
+    <header class="header">
 
-        <!-- Background Effects -->
-        <div class="hero-arc"></div>
+        <nav class="navbar">
 
-        <div class="glow glow-1"></div>
-        <div class="glow glow-2"></div>
+
+            <div>
+
+                <a href="#">
+                    Home
+                </a>
+
+                <a href="#about-section">
+                    About
+                </a>
+
+                <a href="#projects-section">
+                    Projects
+                </a>
+
+                <a href="#services-section">
+                    Services
+                </a>
+
+                <a href="#contact-section">
+                    Contact
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- =========================
+         Main
+    ========================== -->
+
+    <main>
 
         <!-- =========================
-             HEADER
+             Hero
         ========================== -->
 
-        <header class="header">
+        <section class="hero">
 
-            <nav class="navbar">
+            <div class="hero-text">
 
-                <div class="nav-content">
 
-                    <!-- Logo -->
-                    <div class="logo">
+                <!-- Language Switcher -->
 
-                        <div class="logo-circle"></div>
-                        <span>DEMO</span>
+                <div class="language-switcher">
 
-                    </div>
+                    <button onclick="changeLanguage('en')">
+                        EN
+                    </button>
 
-                    <!-- Links -->
-                    <ul class="nav-links">
+                    <button onclick="changeLanguage('pt')">
+                        PT
+                    </button>
 
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Integration</a></li>
-                        <li><a href="#">Blog</a></li>
-
-                    </ul>
+                    <button onclick="changeLanguage('es')">
+                        ES
+                    </button>
 
                 </div>
 
-            </nav>
+                <!-- Hero Content -->
 
-            <!-- Contact Button -->
-            <button class="contact-btn">
-                Contact →
-            </button>
+                <h1 id="title">
+                    Hi, I'm Carla <br>
+                    Cueto
+                </h1>
 
-        </header>
+                <h2 id="subtitle">
+                    Frontend Developer and Translator
+                </h2>
 
-        <!-- =========================
-             HERO CONTENT
-        ========================== -->
+                <p
+                    class="hero-description"
+                    id="description"
+                >
+                    I create sleek, responsive, and user friendly websites
+                    using HTML and CSS. I also provide translation and
+                    localization services in English, Portuguese,
+                    and Spanish.
+                </p>
 
-        <div class="hero-content">
+                <!-- Info Row -->
 
-            <div class="hero-badge">
-                ✦ Optimize Your Workflow
+                <div class="info-row">
+
+                    <span id="inforow1">
+                        Based in Brazil
+                    </span>
+
+                    <span id="inforow2">
+                        Available Now
+                    </span>
+
+                </div>
+
+                <!-- Buttons -->
+
+                <div class="buttons">
+
+                    <a
+                        href="#contact-section"
+                        class="btn dark"
+                        id="hire-btn"
+                    >
+                        Hire Me
+                    </a>
+
+                    <a
+                        href="#projects-section"
+                        class="btn light"
+                        id="projects-btn"
+                    >
+                        View Projects
+                    </a>
+
+                </div>
+
+                <!-- Socials -->
+
+                <div class="socials">
+
+                    <span
+                        class="social-label"
+                        id="follow"
+                    >
+                        Follow me
+                    </span>
+
+                    <a href="https://github.com/carlacuetoche-code">
+                        GitHub
+                    </a>
+
+                    <a href="https://www.fiverr.com/s/Ke24EqE">
+                        Fivver
+                    </a>
+
+                    <a href="">
+                        Instagram
+                    </a>
+
+                </div>
+
             </div>
 
-            <h1>
-                Elevate Your Business Using
-                <span>AI-Driven Automation</span>
-            </h1>
+            <!-- Hero Image -->
 
-            <p>
-                An innovative software platform that simplifies your tasks,
-                enhances efficiency, and helps your business grow seamlessly.
+            <div class="hero-image">
+
+                <img
+                    src="carla.png"
+                    alt="Illustration of Carla working on a laptop"
+                >
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+             About
+        ========================== -->
+
+        <section
+            id="about-section"
+            class="section"
+        >
+
+            <div class="section-heading">
+
+                <span
+                    class="section-tag"
+                    ></span>
+
+                <h3 id="quote">
+                    Creating modern digital experiences.
+                </h3>
+
+            </div>
+
+            <p
+                class="section-text"
+                id="sectiontext"
+            >
+                I am a freelance frontend developer focused on clean
+                interfaces, responsive layouts, and minimal design.
+                I enjoy combining modern aesthetics with multilingual
+                communication and creative branding.
             </p>
 
-            <div class="hero-buttons">
+        </section>
 
-                <button class="primary-btn">
-                    Start Free Trial →
-                </button>
+        <!-- =========================
+             Projects
+        ========================== -->
 
-                <button class="secondary-btn">
-                    Book a Demo
-                </button>
+        <section
+            id="projects-section"
+            class="section"
+        >
+
+            <div class="section-heading">
+
+                <span
+                    class="section-tag"
+                >
+                    
+                </span>
+
+                <h3 id="work">
+                    Selected Work
+                </h3>
 
             </div>
 
-        </div>
+            <div class="project-grid">
+
+                <!-- Project 1 -->
+
+                <article class="project-card">
+
+                    <div class="project-preview">
+                        
+                         <img src="Captura de Tela (36).png">
+                    </div>
+
+                    <div class="project-content">
+                        <h4 id="web1">
+                            Institutional Website
+                        </h4>
+
+                        <p id="web1desc">
+                            Modern responsive website for a fictional organization.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Project 2 -->
+
+                <article class="project-card">
+
+                    <div class="project-preview"><img src="Captura de Tela (34).png"></div>
+
+                    <div class="project-content">
+
+                        <h4 id="web2">
+                            Researcher Portfolio
+                        </h4>
+
+                        <p id="web2desc">
+                            Minimal academic portfolio focused on accessibility and design.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
 
         <!-- =========================
-             DASHBOARD MOCKUP
+             Services
         ========================== -->
-        <div class="mockup">
-        <img src="mockup.png">
-        </div>
 
-    <!-- =========================
-         TRUSTED SECTION
-    ========================== -->
+        <section
+            id="services-section"
+            class="section"
+        >
 
-    <section class="trusted">
+            <div class="section-heading">
 
-        <p>
-            Trusted by 10,000+ Teams Worldwide
-        </p>
+                <span
+                    class="section-tag"
+                    ></span>
 
-        <div class="logos">
+                <h3 id="services-title">
+                    What I Offer
+                </h3>
 
-            <div class="logo-item">Logoipsum</div>
-            <div class="logo-item">IPSUM</div>
-            <div class="logo-item">LOOO</div>
-            <div class="logo-item">Logoipsum</div>
+            </div>
 
-        </div>
+            <div class="service-grid">
+                <article class="service-card">
 
-    </div>
+                    <h4>
+                        Frontend Development
+                    </h4>
 
-    <!-- =========================
-         FEATURES
-    ========================== -->
+                    <p>
+                        Responsive websites and landing pages
+                        using HTML and CSS.
+                    </p>
 
-    <section class="features-section">
+                </article>
 
-        <div class="section-title">
+                <article class="service-card">
 
-            <span class="section-label">
-                Features
+                    <h4>
+                        Translation
+                    </h4>
+
+                    <p>
+                        Translation between English,
+                        Portuguese, and Spanish.
+                    </p>
+
+                </article>
+
+                <article class="service-card">
+
+                    <h4>
+                        Website Localization
+                    </h4>
+
+                    <p>
+                        Helping websites feel natural across
+                        multiple languages.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+             Contact
+        ========================== -->
+
+        <section
+            id="contact-section"
+            class="section contact"
+        >
+
+            <span
+                class="section-tag"
+                id="contact-tag"
+            >
+                Contact
             </span>
 
-            <h2>
-                Accelerate your setup using
-                streamlined low-code processes.
-            </h2>
+            <h3 id="contact-title">
+                Let's Work Together
+            </h3>
 
-            <p>
-                All the tools you need to optimize operations,
-                enhance productivity, and grow confidently.
+            <p
+                class="contact-text"
+                id="contact-text"
+            >
+                Available for freelance frontend development,
+                translation, and creative digital projects.
             </p>
 
-        </div>
+            <a
+                href="https://www.fiverr.com/s/Ke24EqE"
+                class="btn dark"
+            >
+                Fivver page
+            </a>
 
-        <!-- Features Grid -->
-        <div class="features-grid">
+        </section>
 
-            <!-- Card 1 -->
-            <div class="feature-card">
+    </main>
 
-                <div class="feature-icon"></div>
-<img src="graph.jpg">
-                <h3>DEMO AI Solutions</h3>
-                <p>
-                    AI-powered task management for streamlined workflows.
-                </p>
+    <!-- JavaScript -->
 
-            </div>
-
-            <!-- Card 2 -->
-            <div class="feature-card">
-
-                <div class="feature-icon"></div>
-
-                <h3>Custom Support Solutions</h3>
-
-                <p>
-                    Automate tasks and improve customer experiences.
-                </p>
-
-            </div>
-
-            <!-- Card 3 -->
-            <div class="feature-card">
-
-                <div class="feature-icon graph"></div>
-
-                <h3>Data Integration Made Easy</h3>
-
-                <p>
-                    Connect cards, investments, and accounts.
-                </p>
-
-            </div>
-
-            <!-- Card 4 -->
-            <div class="feature-card wide">
-
-                <div class="feature-icon"></div>
-                <div class="wave"></div>
-
-                <h3>Intelligent Automation</h3>
-
-                <p>
-                    Simplify tasks and boost productivity.
-                </p>
-
-            </div>
-
-            <!-- Card 5 -->
-            <div class="feature-card wide">
-<img src="cloud.jpg">
-                <div class="feature-icon"></div>
-                <div class="chart"></div>
-
-                <h3>Data Visualization</h3>
-
-                <p>
-                    Organize datasets for clearer insights.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- Button -->
-        <div class="feature-button">
-
-            <button class="primary-btn">
-                Explore Features →
-            </button>
-
-    </section>
-        </div>
-
-    </section>
+    <script src="javascript.js"></script>
 
 </body>
 
