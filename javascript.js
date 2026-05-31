@@ -9,14 +9,12 @@ en: {
     inforow1: "Based in Brazil",
     inforow2: "Available Now",
 
-    about: "About",
 
     quote: "Creating modern digital experiences.",
 
     sectiontext:
         "I am a freelance frontend developer focused on minimal modern interfaces, responsive layouts, and sleek user experiences. I enjoy combining clean design with multilingual communication and creative branding.",
 
-    projects: "Projects",
 
     work: "Selected Work",
 
@@ -30,7 +28,6 @@ en: {
     web2desc:
         "Minimal academic portfolio focused on accessibility and design.",
 
-    services: "Services",
 
     servicesTitle: "What I Offer",
 
@@ -44,7 +41,12 @@ en: {
     socials: "Socials",
 
     follow: "Follow me",
-
+    dev:'Front-end Development',
+    dev2:'  Responsive websites and landing pages using HTML and CSS.',
+    tran:'Translation',
+    tran2:'Translation between English,Portuguese, and Spanish.',
+    lol:'Website Localization',
+    lol2:'Helping websites feel natural across multiple languages.',
 
  },
 pt: {
@@ -56,14 +58,11 @@ pt: {
     inforow1: 'Baseada no Brasil',
     inforow2: 'Disponível agora',
 
-    about: 'Sobre',
 
     quote: 'Criando experiências digitais modernas.',
 
     sectiontext:
         'Sou uma desenvolvedora frontend freelancer focada em interfaces minimalistas, layouts responsivos e experiências modernas.',
-
-    projects: 'Projetos',
 
     work: 'Projetos Selecionados',
 
@@ -73,7 +72,6 @@ pt: {
     web2: 'Portfólio de Pesquisador',
     web2desc: 'Portfólio acadêmico minimalista focado em acessibilidade e design.',
 
-    services: 'Serviços',
     servicesTitle: 'O Que Eu Ofereço',
 
     contact: 'Contato',
@@ -83,9 +81,17 @@ pt: {
 
     socials: 'Redes Sociais',
     follow: 'Me siga',
+    dev: 'Desenvolvimento Front-end',
+    dev2: 'Sites responsivos e landing pages utilizando HTML e CSS.',
+
+    tran: 'Tradução',
+    tran2: 'Tradução entre inglês, português e espanhol.',
+
+    lol: 'Localização de Websites',
+    lol2: 'Ajudando sites a parecerem naturais em vários idiomas.'
 },
 es: {
-    title: 'Hola, soy Carla <br> Cueto',
+    title: "Hola, soy <span class='highlight';'> Carla <br> Cueto</span>",
     subtitle: 'Desarrolladora Frontend y Traductora',
 
     description: 'Creo sitios web responsivos y contenido multilingüe.',
@@ -93,14 +99,11 @@ es: {
     inforow1: 'Basada en Brasil',
     inforow2: 'Disponible ahora',
 
-    about: 'Acerca de',
 
     quote: 'Creando experiencias digitales modernas.',
 
     sectiontext:
         'Soy una desarrolladora frontend freelance enfocada en interfaces minimalistas, diseños responsivos y experiencias modernas.',
-
-    projects: 'Proyectos',
 
     work: 'Trabajos Seleccionados',
 
@@ -110,7 +113,6 @@ es: {
     web2: 'Portafolio de Investigador',
     web2desc: 'Portafolio académico minimalista enfocado en accesibilidad y diseño.',
 
-    services: 'Servicios',
     servicesTitle: 'Lo Que Ofrezco',
 
     contact: 'Contacto',
@@ -119,7 +121,16 @@ es: {
         'Disponible para desarrollo frontend freelance, traducción y proyectos digitales creativos.',
 
     socials: 'Redes Sociales',
-    follow: 'Sígueme'
+    follow: 'Sígueme',
+
+    dev: 'Desarrollo Front-end',
+    dev2: 'Sitios web responsivos y páginas de destino utilizando HTML y CSS.',
+
+    tran: 'Traducción',
+    tran2: 'Traducción entre inglés, portugués y español.',
+
+    lol: 'Localización de Sitios Web',
+    lol2: 'Ayudando a que los sitios web se sientan naturales en múltiples idiomas.'
 }
 
 };
@@ -157,6 +168,17 @@ function changeLanguage(language) {
 
     document.getElementById("web1").textContent =
         translations[language].web1;
+    document.getElementById('lol').textContent=
+        translations[language].lol;
+    document.getElementById('lol2').textContent=
+        translations[language].lol2;
+    document.getElementById('dev2').textContent=
+        translations[language].dev2;
+    document.getElementById('tran2').textContent=
+        translations[language].tran2;
+        
+    document.getElementById('tran').textContent=
+        translations[language].tran;
 
     document.getElementById("web1desc").textContent =
         translations[language].web1desc;
@@ -178,6 +200,8 @@ function changeLanguage(language) {
 
     document.getElementById("contact-tag").textContent =
         translations[language].contact;
+    document.getElementById("dev").textContent =
+        translations[language].dev;
 
     document.getElementById("contact-title").textContent =
         translations[language].contactTitle;
