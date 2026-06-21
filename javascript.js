@@ -47,6 +47,8 @@ en: {
     tran2:'Translation between English,Portuguese, and Spanish.',
     lol:'Website Localization',
     lol2:'Helping websites feel natural across multiple languages.',
+    hirebtn:"hire me",
+    projectsbtn:'Views projects'
 
  },
 pt: {
@@ -88,7 +90,9 @@ pt: {
     tran2: 'Tradução entre inglês, português e espanhol.',
 
     lol: 'Localização de Websites',
-    lol2: 'Ajudando sites a parecerem naturais em vários idiomas.'
+    lol2: 'Ajudando sites a parecerem naturais em vários idiomas.',
+    hirebtn:"me contrate",
+    projectsbtn:'Ver projetos'
 },
 es: {
     title: "Hola, soy <span class='highlight';'> Carla <br> Cueto</span>",
@@ -130,7 +134,9 @@ es: {
     tran2: 'Traducción entre inglés, portugués y español.',
 
     lol: 'Localización de Sitios Web',
-    lol2: 'Ayudando a que los sitios web se sientan naturales en múltiples idiomas.'
+    lol2: 'Ayudando a que los sitios web se sientan naturales en múltiples idiomas.',
+    hirebtn:"contrátame",
+    projectsbtn:'Ver proyectos'
 }
 
 };
@@ -168,6 +174,11 @@ function changeLanguage(language) {
 
     document.getElementById("web1").textContent =
         translations[language].web1;
+
+    
+    document.getElementById("projectsbtn").textContent =
+        translations[language].projectsbtn;
+
     document.getElementById('lol').textContent=
         translations[language].lol;
     document.getElementById('lol2').textContent=
@@ -205,6 +216,9 @@ function changeLanguage(language) {
 
     document.getElementById("contact-title").textContent =
         translations[language].contactTitle;
+        
+    document.getElementById("hirebtn").textContent =
+        translations[language].hirebtn;
 
     document.getElementById("contact-text").textContent =
         translations[language].contactText;

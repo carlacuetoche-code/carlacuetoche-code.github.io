@@ -1,35 +1,44 @@
 /* =========================
    RESET & VARIABLES
 ========================= */
-:root {
-  --bg: #fafafa;
+:root { 
+  --bg: #fff9fc;
   --surface: #ffffff;
 
-  --text: #111827;
-  --muted: #6b7280;
+  --text: #241420;
+  --muted: #7d6c78;
 
-  --primary: #7c6ee6;
-  --primary-light: #ede9fe;
+  --primary: #ff6ab4;
+  --primary-hover: #db2777;
 
-  --border: #e5e7eb;
+  --primary-light: #fde7f3;
+
+  --primary2: linear-gradient(
+    135deg,
+    #ff7ac6 0%,
+    #ec4899 100%
+  );
+
+  --border: #f1dce9;
+
+  --shadow:
+    0 4px 12px rgba(236,72,153,.06),
+    0 12px 28px rgba(0,0,0,.05);
+
+  --shadow-hover:
+    0 12px 24px rgba(236,72,153,.12),
+    0 20px 40px rgba(0,0,0,.08);
 
   --container: 1200px;
-
   --radius: 24px;
   --radius-sm: 14px;
   --pill: 999px;
 
-  --shadow:
-    0 4px 10px rgba(0,0,0,.03),
-    0 12px 24px rgba(0,0,0,.05);
-
-  --shadow-hover:
-    0 10px 20px rgba(0,0,0,.05),
-    0 20px 40px rgba(0,0,0,.08);
-
-  --transition: .25s ease;
+  --transition:.25s ease;
 }
-
+.primary{
+  color: var(--primary);
+}
 *,
 *::before,
 *::after {
@@ -87,7 +96,7 @@ a {
 ========================= */
 
 header {
-  position: sticky;
+  position: relative;
   top: 30px;
   z-index: 1000;
 
@@ -122,13 +131,13 @@ header {
   color: var(--muted);
 
   border-radius: var(--pill);
-
   transition: all .25s ease;
 }
 
 .navbar a:hover {
   background: var(--primary-light);
   color: var(--primary);
+  padding: -50px -50px;
 }
 
 /* =========================
@@ -445,6 +454,26 @@ box-shadow:
 @media (max-width: 600px) {
   .buttons {
     flex-direction: column;
+    
+  }
+
+  .navbar {
+    width: 100%;
+    overflow-x: auto;
+    justify-content: flex-start;
+    scrollbar-width: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .navbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navbar a {
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
   .project-grid,
@@ -453,11 +482,8 @@ box-shadow:
   }
 }
 .highlight {
-  background: linear-gradient(
-    90deg,
-    #7c6ee6,
-    #9d8cff
-  );
+background: var(--primary2);
+
 
   -webkit-background-clip: text;
   color: transparent;
